@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href="NEW.BOOTSRIP/bootstrap.css">
+    
+</head>
+<body>
+   <div class="container">
+    <div class="main"> 
+        <div class="box">
+        <form onsubmit="calculatemarks(event)" class="form-group" id="CalculatorForm">
+            <input type="Number" required min="0" max="100" class="form-control mt-1   mb-1" name="maths" placeholder="Maths">
+            <input type="number" required min="0" max="100" class="form-control mb-1" name="english" placeholder="English">
+            <input type="number" required min="0" max="100" class="form-control mb-1" name="computer" placeholder="Computer">
+            <input type="number" required min="0" max="100" class="form-control mb-1" name="physics" placeholder="Physics">
+            <input type="number" required min="0" max="100" class="form-control mb-1" name="chemistry" placeholder="Physics">
+            <button id="button1" type="submit" class="btn btn-danger  btn-md w-100 " >Calculate</button>
+        </form>
+        </div>
+    </div>
+    
+        <div class="row row-cols-1 justify-content-center align-items-center text-center">
+          <div  id="footer" class="col-12 col-md-12 text-light">
+            <h4>Calculate Your</h4>
+          </div>
+          <div id="footer"  class="col-12 col-md-12 text-light">
+            <h4>Percentage</h4>
+          </div> 
+        </div>
+   
+      
+   </div>
+    <script src="index.js" ></script>
+</body>
+</html>
